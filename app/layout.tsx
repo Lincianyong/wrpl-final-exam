@@ -35,8 +35,6 @@ export default function RootLayout({children}: {children: ReactNode}) {
         <WrapperForCartContext>
           <>
             <Header />
-
-            {/* @ts-expect-error Server Component */}
             <CategoriesMenu />
             {children}
             <Footer />
