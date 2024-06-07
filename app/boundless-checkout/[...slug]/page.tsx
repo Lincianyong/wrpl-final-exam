@@ -1,12 +1,12 @@
-// import {Metadata} from 'next';
-// import BoundlessCheckout from '@/components/checkout/boundlessCheckout';
+import {Metadata} from 'next';
+import BoundlessCheckout from '@/components/checkout/boundlessCheckout';
 
-// export default function BoundlessCheckoutPage() {
-// 	return (
-// 		<BoundlessCheckout />
-// 	);
-// }
+export default function BoundlessCheckoutPage() {
+	return (
+		<BoundlessCheckout />
+	);
+}
 
-// export const metadata: Metadata = {
-// 	robots: 'noindex'
-// };
+export const metadata: Metadata = {
+	robots: 'noindex'
+};
