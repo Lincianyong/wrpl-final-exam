@@ -19,6 +19,7 @@ import Footer from '@/components/footer';
 export const metadata: Metadata = {
   title: 'Beli-Book book store',
   description: 'Build your own e-commerce with Boundless-Commerce and Next.js v14',
+  icons: 'favicon.ico',
 };
 
 const plusjakarta = Plus_Jakarta_Sans({
