@@ -15,7 +15,6 @@ export default function CheckoutButtons() {
 
 	return (
 		<div className={'bg-light p-3'}>
-			<h4 className={'mb-4'}>Example of Checkouts:</h4>
 			<div className={'d-flex justify-content-end flex-wrap'} style={{gap: '20px'}}>
 				<Button
 					variant={'contained'}
