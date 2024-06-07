@@ -16,9 +16,6 @@
     "nextjs",
     "theme"
   ],
-  "repository": "https://github.com/kirill-zhirnov/next-ecommerce-starter-kit",
-  "author": "Kirill Zhirnov <ekvixgroup@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
