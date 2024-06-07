@@ -22,7 +22,7 @@ export default function RegisterPage() {
 
 	return (
 		<div className={'container'}>
-			<h1 className={'mb-4'}>Register</h1>
+			<h1 className={'mb-4 text-center'}>Sign up</h1>
 			<div className={'row'}>
 				<div className={'col-md-6 offset-md-3 col-xl-4 offset-xl-4'}>
 					<RegisterForm />

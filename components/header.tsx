@@ -13,8 +13,8 @@ export default function Header() {
 					<Link href={'/'} className={styles.logo}>
 						<Image 
 						src={BeliBookLogo}
-						width={200}
-						height={200}
+						width={500}
+						height={500}
 						alt=""
 						className='w-[400px] h-auto'
 						/>

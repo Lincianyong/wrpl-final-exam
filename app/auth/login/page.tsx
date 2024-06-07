@@ -22,7 +22,7 @@ export default function LoginPage() {
 
 	return (
 		<div className={'container'}>
-			<h1 className={'mb-4'}>Login</h1>
+			<h1 className={'text-center'}>Login</h1>
 			<div className={'row'}>
 				<div className={'col-md-6 offset-md-3 col-xl-4 offset-xl-4'}>
 					<LoginForm />

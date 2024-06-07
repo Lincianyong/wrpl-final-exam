@@ -9,7 +9,7 @@ import {useRouter} from 'next/navigation';
 import CustomCheckoutDialog from '@/components/checkout/customCheckoutDialog';
 
 export default function CheckoutButtons() {
-	const {isLoading, error, clearError, onBoundlessCheckoutClicked, onCustomerCheckoutClicked,
+	const {isLoading, error, clearError, onBoundlessCheckoutClicked,
 		showCustomCheckout, handleCloseCustomCheckout, onStripeCheckoutClicked
 	} = useBtnsHandlers();
 
@@ -25,15 +25,6 @@ export default function CheckoutButtons() {
 					color="primary"
 				>
 					Stripe Checkout
-				</Button>
-				<Button
-					variant={'contained'}
-					size={'large'}
-					disabled={isLoading}
-					onClick={onCustomerCheckoutClicked}
-					color="success"
-				>
-					Custom Checkout
 				</Button>
 				<Button
 					variant={'contained'}
@@ -95,14 +86,6 @@ const useBtnsHandlers = () => {
 		});
 	}, [validateCart, router]);
 
-	const onCustomerCheckoutClicked = useCallback(() => {
-		validateCart().then((result) => {
-			if (result === true) {
-				setShowCustomCheckout(true);
-			}
-		});
-	}, [validateCart, setShowCustomCheckout]);
-
 	const onStripeCheckoutClicked = useCallback(() => {
 		validateCart().then((result) => {
 			if (result === true) {
@@ -119,7 +102,6 @@ const useBtnsHandlers = () => {
 		error,
 		clearError,
 		onBoundlessCheckoutClicked,
-		onCustomerCheckoutClicked,
 		showCustomCheckout,
 		handleCloseCustomCheckout,
 		onStripeCheckoutClicked

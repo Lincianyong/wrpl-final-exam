@@ -10,7 +10,7 @@ export default function Footer() {
           height={500}
           width={500}
           alt=""
-          className="w-[300px] h-auto"
+          className="w-[100px] lg:w-[300px] h-auto"
         />
       </footer>
     </div>
