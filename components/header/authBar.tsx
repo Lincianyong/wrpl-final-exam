@@ -23,7 +23,7 @@ export default function AuthBar() {
 		router.push('/');
 	}, [router, logout]);
 
-	const rootClasses = clsx(headerStyles['auth-bar'], 'my-1');
+	const rootClasses = clsx(headerStyles['auth-bar'], '');
 
 	if (!customerIsInited) {
 		return <div className={rootClasses}/>;
@@ -47,13 +47,11 @@ export default function AuthBar() {
 			<Button
 					component={Link}
 					href={'/auth/login'}
-					startIcon={<LoginIcon />}
 				>Sign In</Button>
 			<span>|</span>
 			<Button
 				component={Link}
 				href={'/auth/register'}
-				startIcon={<PersonIcon />}
 			>Sign Up</Button>
 		</div>
 	);

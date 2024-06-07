@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import styles from './header/header.module.css';
 import AuthBar from '@/components/header/authBar';
+import Image from 'next/image';
+import BeliBookLogo from "@../../../public/logo/beli-book-logo.png";
 
 export default function Header() {
 	return (
@@ -9,7 +11,13 @@ export default function Header() {
 				<AuthBar />
 				<div className={styles['logo-container']}>
 					<Link href={'/'} className={styles.logo}>
-						Logo
+						<Image 
+						src={BeliBookLogo}
+						width={200}
+						height={200}
+						alt=""
+						className='w-[400px] h-auto'
+						/>
 					</Link>
 				</div>
 			</header>
