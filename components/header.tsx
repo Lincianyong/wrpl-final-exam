@@ -6,21 +6,15 @@ import BeliBookLogo from "@../../../public/logo/beli-book-logo.png";
 
 export default function Header() {
 	return (
-		<div className={'container'}>
-			<header className={styles.header}>
-				<AuthBar />
-				<div className={styles['logo-container']}>
-					<Link href={'/'} className={styles.logo}>
-						<Image 
-						src={BeliBookLogo}
-						width={500}
-						height={500}
-						alt=""
-						className='w-[400px] h-auto'
-						/>
-					</Link>
-				</div>
-			</header>
-		</div>
-	);
+    <div className={"container"}>
+      <header className={styles.header}>
+        <AuthBar />
+        <div className={styles["logo-container"]}>
+          <p className="text-[200px] font-semibold text-black">
+            Calendar of Events Yogya 2024
+          </p>
+        </div>
+      </header>
+    </div>
+  );
 }

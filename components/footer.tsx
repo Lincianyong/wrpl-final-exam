@@ -5,13 +5,7 @@ export default function Footer() {
   return (
     <div className={"container mt-5 mb-4"}>
       <footer className={"p-2 border-top"}>
-        <Image
-          src={BeliBookLogo}
-          height={500}
-          width={500}
-          alt=""
-          className="w-[100px] lg:w-[300px] h-auto"
-        />
+        <p className="text-[200px] font-semibold text-black">Calendar of Events Yogya 2024</p>
       </footer>
     </div>
   );
